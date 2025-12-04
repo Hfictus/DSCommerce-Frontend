@@ -4,6 +4,7 @@
 
 import './styles.css';
 import computerImg from '../../assets/computer.png';
+import ProductCategory from '../ProductCategory';
 
 export default function ProductDetailsCard() {
     return(
@@ -24,12 +25,8 @@ export default function ProductDetailsCard() {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <div className="dsc-category-container">
-                <div className="dsc-category">
-                  Eletrônicos
-                </div>
-                <div className="dsc-category">
-                  Computadores
-                </div>
+                <ProductCategory />
+                <ProductCategory />
               </div>
             </div>
         </div>
