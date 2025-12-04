@@ -4,6 +4,7 @@
 
 import './App.css';
 import computerImg from './assets/computer.png';
+import ButtonInverse from './components/ButtonInverse';
 import ButtonPrimary from './components/ButtonPrimary';
 import HeaderClient from './components/HeaderClient';
 
@@ -42,9 +43,7 @@ function App() {
           </div>
           <div className="dsc-btn-page-container">
               <ButtonPrimary />
-              <div className="dsc-btn dsc-btn-white">
-                Início
-              </div>
+              <ButtonInverse />
           </div>
         </section>
       </main>
