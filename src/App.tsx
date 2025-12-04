@@ -4,6 +4,7 @@
 
 import './App.css';
 import computerImg from './assets/computer.png';
+import ButtonPrimary from './components/ButtonPrimary';
 import HeaderClient from './components/HeaderClient';
 
 function App() {
@@ -40,9 +41,7 @@ function App() {
             </div>
           </div>
           <div className="dsc-btn-page-container">
-              <div className="dsc-btn dsc-btn-blue">
-                Comprar
-              </div>
+              <ButtonPrimary />
               <div className="dsc-btn dsc-btn-white">
                 Início
               </div>

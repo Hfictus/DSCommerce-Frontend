@@ -199,12 +199,6 @@ nav a {
   cursor: pointer;
 }
 
-.dsc-btn-blue {
-  border: none;
-  background-color: var(--dsc-color-btn-primary);
-  color: var(--dsc-color-btn-inverse);
-}
-
 .dsc-btn-white {
   border: 1px solid var(--dsc-color-btn-primary);
   background-color: var(--dsc-color-btn-inverse);
