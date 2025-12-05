@@ -3,6 +3,7 @@
 import './styles.css';
 import HeaderClient from "../../components/HeaderClient";
 import computerImg from '../../assets/computer.png';
+import SearchBar from '../../components/SearchBar';
 
 export default function Catalog() {
     return(
@@ -10,11 +11,7 @@ export default function Catalog() {
             <HeaderClient />
             <main>
                 <section id="catalog-section" className="dsc-container">
-                    <form className="dsc-search-bar">
-                    <button type="submit">🔎︎</button>
-                        <input type="text" placeholder="Nome do produto" />
-                        <button type="reset">🗙</button>
-                    </form>
+                    <SearchBar />
 
                     <div className="dsc-catalog-cards dsc-mb20 dsc-mt20">
                         <div className="dsc-card">
