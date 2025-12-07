@@ -22,6 +22,10 @@ const product: ProductDTO = {
     {
       id: 3,
       name: "Computadores"
+    },
+    {
+      id: 4,
+      name: "Importados"
     }
   ]
 }
@@ -29,16 +33,16 @@ const product: ProductDTO = {
 export default function ProductDetails() {
     return(
         <>
-      <HeaderClient />
-      <main>
-        <section id="product-details-section" className="dsc-container">
-          <ProductDetailsCard product={product} />          
-          <div className="dsc-btn-page-container">
-              <ButtonPrimary />
-              <ButtonInverse />
-          </div>
-        </section>
-      </main>
+          <HeaderClient />
+          <main>
+            <section id="product-details-section" className="dsc-container">
+              <ProductDetailsCard product={product} />          
+              <div className="dsc-btn-page-container">
+                  <ButtonPrimary />
+                  <ButtonInverse />
+              </div>
+            </section>
+          </main>
     </>
     );
 }
