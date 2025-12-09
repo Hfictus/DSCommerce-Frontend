@@ -40,6 +40,7 @@ const RAW_RUNTIME_STATE =
           ["globals", "npm:16.5.0"],\
           ["react", "npm:19.2.0"],\
           ["react-dom", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:19.2.0"],\
+          ["react-router-dom", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:7.1.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["typescript-eslint", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:8.48.1"],\
           ["vite", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:7.2.6"]\
@@ -1046,6 +1047,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/cookie", [\
+      ["npm:0.6.0", {\
+        "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/@types-cookie-npm-0.6.0-1f4c3f48f0-10c0.zip/node_modules/@types/cookie/",\
+        "packageDependencies": [\
+          ["@types/cookie", "npm:0.6.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/estree", [\
       ["npm:1.0.8", {\
         "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/@types-estree-npm-1.0.8-2195bac6d6-10c0.zip/node_modules/@types/estree/",\
@@ -1599,6 +1609,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["cookie", [\
+      ["npm:1.1.1", {\
+        "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/cookie-npm-1.1.1-881103ddeb-10c0.zip/node_modules/cookie/",\
+        "packageDependencies": [\
+          ["cookie", "npm:1.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["cross-spawn", [\
       ["npm:7.0.6", {\
         "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/cross-spawn-npm-7.0.6-264bddf921-10c0.zip/node_modules/cross-spawn/",\
@@ -1668,6 +1687,7 @@ const RAW_RUNTIME_STATE =
           ["globals", "npm:16.5.0"],\
           ["react", "npm:19.2.0"],\
           ["react-dom", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:19.2.0"],\
+          ["react-router-dom", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:7.1.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["typescript-eslint", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:8.48.1"],\
           ["vite", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:7.2.6"]\
@@ -2793,6 +2813,63 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-router", [\
+      ["npm:7.1.1", {\
+        "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/react-router-npm-7.1.1-b009809927-10c0.zip/node_modules/react-router/",\
+        "packageDependencies": [\
+          ["react-router", "npm:7.1.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:398d8a6cf35a0f3a7dc3967eaf3a72ae4b41560c0ec9cb9e89add3950e4d82d68701ffe76d5bab5a2c23e3e027b9bf117c40dfadb0209126e1de083a9ce869a8#npm:7.1.1", {\
+        "packageLocation": "./.yarn/__virtual__/react-router-virtual-fddf47e54d/3/Users/Gerson/AppData/Local/Yarn/Berry/cache/react-router-npm-7.1.1-b009809927-10c0.zip/node_modules/react-router/",\
+        "packageDependencies": [\
+          ["@types/cookie", "npm:0.6.0"],\
+          ["@types/react", "npm:19.2.7"],\
+          ["@types/react-dom", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:19.2.3"],\
+          ["cookie", "npm:1.1.1"],\
+          ["react", "npm:19.2.0"],\
+          ["react-dom", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:19.2.0"],\
+          ["react-router", "virtual:398d8a6cf35a0f3a7dc3967eaf3a72ae4b41560c0ec9cb9e89add3950e4d82d68701ffe76d5bab5a2c23e3e027b9bf117c40dfadb0209126e1de083a9ce869a8#npm:7.1.1"],\
+          ["set-cookie-parser", "npm:2.7.2"],\
+          ["turbo-stream", "npm:2.4.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-router-dom", [\
+      ["npm:7.1.1", {\
+        "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/react-router-dom-npm-7.1.1-e7e2c37675-10c0.zip/node_modules/react-router-dom/",\
+        "packageDependencies": [\
+          ["react-router-dom", "npm:7.1.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:7.1.1", {\
+        "packageLocation": "./.yarn/__virtual__/react-router-dom-virtual-398d8a6cf3/3/Users/Gerson/AppData/Local/Yarn/Berry/cache/react-router-dom-npm-7.1.1-e7e2c37675-10c0.zip/node_modules/react-router-dom/",\
+        "packageDependencies": [\
+          ["@types/react", "npm:19.2.7"],\
+          ["@types/react-dom", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:19.2.3"],\
+          ["react", "npm:19.2.0"],\
+          ["react-dom", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:19.2.0"],\
+          ["react-router", "virtual:398d8a6cf35a0f3a7dc3967eaf3a72ae4b41560c0ec9cb9e89add3950e4d82d68701ffe76d5bab5a2c23e3e027b9bf117c40dfadb0209126e1de083a9ce869a8#npm:7.1.1"],\
+          ["react-router-dom", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:7.1.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["resolve-from", [\
       ["npm:4.0.0", {\
         "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/resolve-from-npm-4.0.0-f758ec21bf-10c0.zip/node_modules/resolve-from/",\
@@ -2874,6 +2951,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/semver-npm-7.7.3-9cf7b3b46c-10c0.zip/node_modules/semver/",\
         "packageDependencies": [\
           ["semver", "npm:7.7.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["set-cookie-parser", [\
+      ["npm:2.7.2", {\
+        "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/set-cookie-parser-npm-2.7.2-e1a4d1221b-10c0.zip/node_modules/set-cookie-parser/",\
+        "packageDependencies": [\
+          ["set-cookie-parser", "npm:2.7.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3010,6 +3096,15 @@ const RAW_RUNTIME_STATE =
         "packagePeers": [\
           "@types/typescript",\
           "typescript"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["turbo-stream", [\
+      ["npm:2.4.0", {\
+        "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/turbo-stream-npm-2.4.0-e0cec53097-10c0.zip/node_modules/turbo-stream/",\
+        "packageDependencies": [\
+          ["turbo-stream", "npm:2.4.0"]\
         ],\
         "linkType": "HARD"\
       }]\
