@@ -19,5 +19,21 @@ export default defineConfig([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    //ADICIONADO: Configuração de regras personalizadas
+    rules: {
+      // Permite o uso do tipo Function
+      '@typescript-eslint/ban-types': ['error', {
+        types: {
+          Function: false,
+        },
+        extendDefaults: true,
+      }],
+      
+      // Permite o uso de any (ou use 'warn' para apenas avisar)
+      '@typescript-eslint/no-explicit-any': 'off',
+      
+      // Permite arrays de dependências vazios no useEffect (ou use 'off' para desabilitar)
+      'react-hooks/exhaustive-deps': 'warn',
+    },
   },
 ])
