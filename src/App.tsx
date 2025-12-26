@@ -20,7 +20,7 @@ export default function App() {
   
   return (
     <ContextCartCount.Provider value={ {contextCartCount, setContextCartCount} }>
-      <HistoryRouter history={history}>
+      <HistoryRouter history={history as any}>
         <Routes>
           <Route path="/" element={<ClientHome />}>
             <Route index element={<Catalog />} />

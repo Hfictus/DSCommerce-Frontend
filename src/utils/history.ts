@@ -2,6 +2,4 @@
 
 import { createBrowserHistory } from 'history';
 
-export const history = createBrowserHistory({
-    window
-});
+export const history = createBrowserHistory();
