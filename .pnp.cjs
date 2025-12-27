@@ -29,6 +29,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@eslint/js", "npm:9.39.1"],\
+          ["@types/jwt-decode", "npm:3.1.0"],\
           ["@types/node", "npm:24.10.1"],\
           ["@types/qs", "npm:6.9.7"],\
           ["@types/react", "npm:19.2.7"],\
@@ -41,6 +42,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-refresh", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:0.4.24"],\
           ["globals", "npm:16.5.0"],\
           ["history", "npm:5.3.0"],\
+          ["jwt-decode", "npm:3.1.2"],\
           ["qs", "npm:6.11.0"],\
           ["react", "npm:19.2.0"],\
           ["react-dom", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:19.2.0"],\
@@ -1087,6 +1089,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/jwt-decode", [\
+      ["npm:3.1.0", {\
+        "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/@types-jwt-decode-npm-3.1.0-7f93d5cb7a-10c0.zip/node_modules/@types/jwt-decode/",\
+        "packageDependencies": [\
+          ["@types/jwt-decode", "npm:3.1.0"],\
+          ["jwt-decode", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/node", [\
       ["npm:24.10.1", {\
         "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/@types-node-npm-24.10.1-d514f50dfd-10c0.zip/node_modules/@types/node/",\
@@ -1778,6 +1790,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@eslint/js", "npm:9.39.1"],\
+          ["@types/jwt-decode", "npm:3.1.0"],\
           ["@types/node", "npm:24.10.1"],\
           ["@types/qs", "npm:6.9.7"],\
           ["@types/react", "npm:19.2.7"],\
@@ -1790,6 +1803,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-refresh", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:0.4.24"],\
           ["globals", "npm:16.5.0"],\
           ["history", "npm:5.3.0"],\
+          ["jwt-decode", "npm:3.1.2"],\
           ["qs", "npm:6.11.0"],\
           ["react", "npm:19.2.0"],\
           ["react-dom", "virtual:ca1f9da14e12defe8f532bc9a403cbacfa4cdda2f2bea487c1848c2deb6284b86ed7dc1c6542f47134ceae179ab5262b1875c463ed75c32c3cce02d44d28dd6a#npm:19.2.0"],\
@@ -2654,6 +2668,22 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/json5-npm-2.2.3-9962c55073-10c0.zip/node_modules/json5/",\
         "packageDependencies": [\
           ["json5", "npm:2.2.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["jwt-decode", [\
+      ["npm:3.1.2", {\
+        "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/jwt-decode-npm-3.1.2-bf3ab26591-10c0.zip/node_modules/jwt-decode/",\
+        "packageDependencies": [\
+          ["jwt-decode", "npm:3.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:4.0.0", {\
+        "packageLocation": "../../Users/Gerson/AppData/Local/Yarn/Berry/cache/jwt-decode-npm-4.0.0-4cd8e89909-10c0.zip/node_modules/jwt-decode/",\
+        "packageDependencies": [\
+          ["jwt-decode", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
