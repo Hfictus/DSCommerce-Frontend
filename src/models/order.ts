@@ -1,14 +1,14 @@
 
 export class OrderDTO {
-id?: number;
-items: OrderItemDTO[] = [];
-get total(): number {
-let sum = 0;
-this.items.forEach(item => {
-sum += item.subTotal;
-})
-return sum;
-}
+    id?: number;
+    items: OrderItemDTO[] = [];
+    get total(): number {
+        let sum = 0;
+        this.items.forEach(item => {
+            sum += item.subtotal;
+        })
+        return sum;
+    }
 }
 export class OrderItemDTO {
     constructor(
@@ -18,7 +18,7 @@ export class OrderItemDTO {
         public price: number,
         public imgUrl: string
     ) {}
-    get subTotal() : number {
+    get subtotal() : number {
         return this.price * this.quantity;
     }
 }
