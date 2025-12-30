@@ -7,11 +7,14 @@ import { Link } from "react-router-dom";
 
 export default function LoggedUser() {
     
+
+    
     const { contextTokenPayload, setContextTokenPayload } = useContext(ContextToken);
 
     function handleLogoutClick() {
         authService.logout();
         setContextTokenPayload(undefined);
+        
     }
 
     return(
