@@ -40,17 +40,7 @@ export default function ProductForm() {
         }
     });
     
-    function handleInputChange(event: any) {
-        const dataUpdated = forms.update(formData, event.target.name, event.target.value);
-        const dataValidated = forms.validate(dataUpdated, event.target.name);
-        setFormData(dataValidated);
-    }
-
     useEffect(() => {
-
-        const result = forms.toDirty(formData, "price");
-        console.log(result);
-
         if(isEditing) {
             productService.findById(Number(params.productId))
                 .then(response => {
@@ -59,9 +49,13 @@ export default function ProductForm() {
         }
     },[]);
 
+
+    function handleInputChange(event: any) {
+        setFormData(forms.updateAndValidate(formData, event.target.name, event.target.value));
+    }
+
     function handleTurnDirty(name: string) {
-        const newFormData = forms.toDirty(formData, name);
-        setFormData(newFormData);
+        setFormData(forms.dirtyAndValidate(formData, name));
     }
 
     return(
