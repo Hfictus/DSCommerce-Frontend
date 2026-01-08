@@ -6,9 +6,14 @@ import * as forms from '../../../utils/forms';
 import FormInput from '../../../components/FormInput';
 import * as productService from '../../../services/product-service';
 import FormTextArea from '../../../components/FormTextArea';
+import type { CategoryDTO } from '../../../models/category';
+import * as categoryService from '../../../services/category-service';
+import Select from 'react-select';
 
 export default function ProductForm() {
     
+    const [categories, setCategories] = useState<CategoryDTO[]>([]);
+
     const params = useParams();
 
     const isEditing = params.productId !== "create";
@@ -58,6 +63,14 @@ export default function ProductForm() {
     });
     
     useEffect(() => {
+        categoryService.findAllRequest()
+            .then(response => {
+                setCategories(response.data);
+            })
+    },[]);
+
+
+    useEffect(() => {
         if(isEditing) {
             productService.findById(Number(params.productId))
                 .then(response => {
@@ -106,6 +119,14 @@ export default function ProductForm() {
                                     className="dsc-form-control"
                                     onTurnDirty={handleTurnDirty}
                                     onChange={handleInputChange}
+                                />
+                            </div>
+                            <div>
+                                <Select
+                                    options={categories}
+                                    isMulti
+                                    getOptionLabel={(obj: any) => obj.name}
+                                    getOptionValue={(obj: any) => String(obj.id)}
                                 />
                             </div>
                             <div>
