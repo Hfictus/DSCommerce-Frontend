@@ -1,5 +1,5 @@
 
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import './styles.css';
 import { useEffect, useState } from 'react';
 import * as forms from '../../../utils/forms';
@@ -13,6 +13,8 @@ import { selectStyles } from '../../../utils/select';
 
 export default function ProductForm() {
     
+    const navigate = useNavigate();
+
     const [categories, setCategories] = useState<CategoryDTO[]>([]);
 
     const params = useParams();
@@ -103,7 +105,16 @@ export default function ProductForm() {
             setFormData(formDataValidated);
             return;
         }
-        //console.log(forms.toValues(formData));
+        
+        const requestBody = forms.toValues(formData);
+        if(isEditing) {
+            requestBody.id = params.productId;
+        }
+
+        productService.updateRequest(requestBody)
+            .then(() => {
+                navigate("/admin/products");
+            });
     }
 
     return(
