@@ -166,8 +166,7 @@ export default function ProductForm() {
                                     options={categories}
                                     onChange={(obj: any) => {
                                         const newFormData = forms.updateAndValidate(formData, "categories", obj);
-                                        console.log(newFormData.categories);
-                                        setFormData(newFormData)
+                                        setFormData(newFormData);
                                     }}
                                     onTurnDirty={handleTurnDirty}
                                     isMulti
