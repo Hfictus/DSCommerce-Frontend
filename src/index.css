@@ -403,8 +403,15 @@ nav a {
   transform: translate(-50%, -50%);
 }
 
+.dsc-info-box {
+    width: 90%;
+    max-width: 360px;
+}
+
+
 .dsc-dialog-box h2 {
   font-size: 20px;
+  text-align: center;
   color: var(--dsc-color-font-primary);
   margin-bottom: 20px;
 }
@@ -419,3 +426,4 @@ nav a {
 .dsc-dialog-btn {
   width: 100%;
 }
+
