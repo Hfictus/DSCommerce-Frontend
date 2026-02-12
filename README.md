@@ -30,7 +30,7 @@ ROLE_CLIENT, e ROLE_ADMIN<br>
 Senha usada como exemplo para os dois usuários:<br>
 123456<br>
 
-## Layout Web e infromações sobre casos de uso:<br>
+## Layout Web e informações sobre casos de uso:<br>
 Telas da área do cliente:<br>
 
 Catálogo de produtos (listagem paginada; página inicial):<br>
@@ -42,7 +42,7 @@ pode-se filtrar a lista por nome de produtos; <br>
 pode-se carregar mais produtos, clicando-se no botão Carregar mais, na parte inferior da tela; <br>
 o botão Entrar, no cabeçalho, leva à página de login; <br>
 o botão com a imagem de carrinho leva para a página do carrinho de compras; <br>
-o processo de compra de um produto inicia ao se clicar no carde de um deles, dando acesso à tela de detalhes do item. <br>
+o processo de compra de um produto inicia ao se clicar no card de um deles, dando acesso à tela de detalhes do item. <br>
 
 Filtrar lista por nome de produto: <br>
 Inserir nome completo, ou parte, do produto buscado e clicar no botão com imagem de lupa. <br>
@@ -86,7 +86,7 @@ categorias. <br>
 Ao se fazer o login, aparece o email do usuário sobre o botão Sair, que aparece no lugar do botão Entrar. <br>
 Se se clicar no botão com imagem de carrinho sem se ter adicionado nenhum item, a tela de carrinho de compras aparece sem produto nenhum, com uma mensagem indicando que está vazio: Seu carrinho está vazio. <br>
 
-Se se clicar no botão Comprar, há acesso da página de carrinho de compras, sendo adicionado ao carrinho o produto escolhido. <br> 
+Com o clique no botão Comprar, há acesso à página de carrinho de compras, sendo adicionado ao carrinho o produto escolhido. <br> 
 
 Carrinho de compras (com um produto adicionado):<br>
 ![Web 3]( https://github.com/Hfictus/images/blob/main/CartMyDSCommerce.webp
@@ -96,9 +96,8 @@ clicar no botão Continuar comprando, ou no logo DSCommerce, para voltar para a 
 clicar no botão para aumentar os itens dos produtos adicionados (+), ou no botão para diminuir (-);<br>
 clicar no botão para diminuir itens (-) até que o produto seja excluído do carrinho (quando a quantidade do item for menor do que 1); <br>
 clicar no botão Limpar carrinho para que todos os produtos sejam excluídos juntos; <br>
-clicar no botão Continuar comprando para acessar a página de catálogo para escolher outros produtos; <br>
 clicar no botão Entrar, para acessar a página de login, se não se estiver com ele já efetuado; <br>
-clicar no botão Finalizar pedido para confirmar compra (havendo direcionamento para a tela de login, se ainda não tiver sido efetuado; ou para a tela de confirmação de pedido). <br>
+clicar no botão Finalizar pedido para confirmar compra (havendo direcionamento para a tela de login, se ainda não tiver sido feito; ou para a tela de confirmação de pedido). <br>
 
 Perfis com permissão para acesso: <br>
 Anônimo; <br>
@@ -119,7 +118,7 @@ Login:<br>
 Na tela de login, é possível:<br>
 clicar no botão com imagem de carrinho para acessar o carrinho de compras; <br>
 clicar no logo do site para voltar para a página de catálogo; <br>
-clicar no botão azul do formulário (Entrar) para dar sequência à compra (com email e senha adicionados no formulário). <br>
+clicar no botão azul do formulário (Entrar) para dar sequência à compra (com email e senha adicionados ao formulário). <br>
 
 Perfis com permissão para acesso: <br>
 Anônimo; <br>
@@ -135,12 +134,12 @@ senha. <br>
 
 Critérios para validação do formulário de login: <br>
 formato correto de email existente no sistema; <br>
-senha existente no sistema; <br>
+senha existente no sistema. <br>
 
 Observação: o usuário anônimo pode acessar o carrinho de compras, sendo direcionado para a tela de login ao clicar no botão Finalizar pedido. <br>
 Ao se fazer login no processo de compra, aparece o usuário sobre o botão Sair, que substitui o botão Entrar no cabeçalho.<br>
 
-Com o usuário já logado, Havendo produto no carrinho e se clicando em Finalizar pedido, acessa-se a página de confirmação de pedido, com indicação de seu número:<br>
+Com o usuário já logado, havendo produto no carrinho e se clicando em Finalizar pedido, acessa-se a página de confirmação de pedido, com indicação de seu número:<br>
 ![Web 5]( https://github.com/Hfictus/images/blob/main/OrderConfirmationMyDSCommerce.webp
 )<br>
 Na tela de confirmação de pedido, com usuário já com login realizado, é possível visualizar os seguintes dados do pedido:<br>
@@ -154,7 +153,7 @@ total da compra. <br>
 Também é possível: <br>
 clicar no botão Início, ou no logo do site, para voltar para a página de catálogo; <br>
 clicar no botão com imagem de carrinho para acessar uma nova página de carrinho de compras, vazio; <br>
-clicar no botão Sair, para fazer log out; <br>
+clicar no botão Sair, para fazer logout; <br>
 
 Ao realizar o login, o username aparece no cabeçalho de todas as páginas às quais o usuário tem acesso. <br>
 Se o login for feito por usuário com perfil ROLE_ADMIN, aparecerá no cabeçalho botão com imagem de engrenagem, para acessar a área administrativa. <br>
@@ -174,18 +173,18 @@ Imagem de detalhe do cabeçalho da área do cliente, após login efetuado por ad
 ![Web 7]( https://github.com/Hfictus/images/blob/main/ClientHeaderMyDSCommerce.webp)<br>
 
 Tela de boas-vindas, acessada ao se clicar no botão com imagem de engrenagem:<br>
-![Web 8]( https://github.com/Hfictus/images/blob/main/Product%20Listing-1DSCommerceWeb.png)<br>
+![Web 8]( https://github.com/Hfictus/images/blob/main/AdminWelcomePage.webp)<br>
 Na tela de boas-vindas da área administrativa, há:<br>
 um logo; <br>
 um botão Início (para navegar para esta página a partir de outras); <br>
 um botão Produtos (Para navegar para a página do formulário de CRUD; <br>
-um botão Sair, para log out; <br>
+um botão Sair, para logout; <br>
 uma mensagem de boas-vindas com o nome do usuário administrador. <br>
 
 Tela de CRUD:<br>
 ![Web 9]( https://github.com/Hfictus/images/blob/main/Product%20ListingDSCommerceWeb.png)<br>
 Na tela de CRUD, pode-se:<br>
-Visualizar a listagem de produtos paginada e organizada por nome, em ordem crescente, com 12 produtos por página; <br>
+visualizar a listagem de produtos paginada e organizada por nome, em ordem crescente, com 12 produtos por página; <br>
 filtrar a lista por nome de produtos (como na tela de catálogo); <br>
 carregar mais produtos, clicando-se no botão Carregar mais, na parte inferior da tela (botão que desaparece na última página da listagem); <br>
 atualizar dados de um produto específico ao se clicar no botão com imagem de lápis; <br>
