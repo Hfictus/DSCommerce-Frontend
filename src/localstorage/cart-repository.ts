@@ -14,7 +14,7 @@ export function get(): OrderDTO {
     const str = localStorage.getItem(CART_KEY) || '{"items":[]}';
     const obj = JSON.parse(str);
     const cart = new OrderDTO();
-    obj.items.forEach(x => {
+    obj.items.forEach((x: any) => {
         cart.items.push(new OrderItemDTO(x.productId, x.quantity, x.name, x.price, x.imgUrl));
     });
     return cart;
