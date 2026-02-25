@@ -17,7 +17,7 @@ export default function HeaderClient() {
         <header className="dsc-header-client">
         <nav className="dsc-container">
           <Link to="/">
-            <h1>DSCFrontend</h1>
+            <h1>DSCFullStack</h1>
           </Link>
           <div className="dsc-navbar-right">
             <div className="dsc-menu-items-container">
