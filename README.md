@@ -304,7 +304,7 @@ Definição de qual Branch no repositório do projeto será considerado pelo Net
 
 Configurações básicas de builds:<br>
 o campo do base directory pode ficar vazio se o repositório não for monorepo (havendo somente um projeto);<br>
-no caso de um repositório monorepo, preenxer o campo de base directory, no Netlify, com o nome da subpasta na qual está o projeto de Frontend;<br>
+no caso de um repositório monorepo, preencher o campo de base directory, no Netlify, com o nome da subpasta na qual está o projeto de Frontend;<br>
 em build command, usa-se yarn build, já que se trata de um projeto com yarn;<br>
 no caso do projeto do Vite, o dist é o diretório onde o build é gerado. Por isso, coloca-se dist em publish directory;<br>
 configurar as variáveis de ambiente, anteriormente criadas com valores padrão no arquivo system.ts no projeto de Frontend.<br>
@@ -317,7 +317,7 @@ VITE_CLIENT_SECRET = myclientsecret (valor padrão para testes)<br>
 
 Clicar no botão para iniciar o deploy.
 
-Será criado o link para o site implantado na núvem:<br>
+Será criado o link para o site implantado na nuvem:<br>
 https://dominio-criado.netlify.app/
 
 É possível trocar o nome do domínio automaticamente criado no Netlify:<br>
@@ -349,14 +349,14 @@ NF_CLIENT_SECRET (myclientsecret)
 As variáveis de ambiente iniciadas por VITE_ são acessadas pelo Frontend React; e as iniciadas por NF_ são acessadas pela Netlify function.<br>
 
 O Netlify function é um código node, que roda em Backend no Netlify.<br>
-O Netlify disponibiliza o seguinte recurso com as functions: criar funções lambda, de backend dentro do projeto no Netlify (que servem para executar algo no modo Backend para proteger dados senssíveis).<br>
+O Netlify disponibiliza o seguinte recurso com as functions: criar funções lambda, de backend dentro do projeto no Netlify (que servem para executar algo no modo Backend para proteger dados sensíveis).<br>
 A função Netlify faz um proxy da requisição de login:<br>
 a função loginRequest (auth-service.ts: Frontend) passa a chamar a Netlify function, sendo esta que acessa as variáveis de ambiente das credenciais da aplicação. (Netlify function é uma função de Backend).<br>
 As credenciais não mais são acessadas diretamente na função loginRequest (como era feito antes da alteração do código para a montagem do cabeçalho da requisição de login).<br>
 Na função loginRequest, acessa-se a Netlify function (na url do axios). A Netlify function faz a requisição para o Backend. Assim, isso está encapsulado no axios.<br>
 
-fluxo com Neglify function:<br>
-requisição do Frontend para Netlify cunction;<br>
+fluxo com Netlify function:<br>
+requisição do Frontend para Netlify function;<br>
 Requisição da Netlify function para o Backend (com isso, o Frontend não fica conhecendo as credenciais da aplicação: CLIENT_ID, CLIENT_SECRET).<br>
 
 No projeto Frontend:<br>
